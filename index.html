@@ -1,0 +1,303 @@
+{% extends base %} 
+
+{% block page %}
+  <div class="pie_content">
+    <div class="panel panel-body">
+      <div class="pie_intro_wrapper">
+        <div class="pie_server_welcome">
+          <div class="sv_heading">Pie Theme</div>
+          <!-- Change 'Pie Theme' to your server name -->
+          <div class="sv_untitle">Server Store</div>
+        </div>
+        <div class="pie_goal"></div>
+      </div>
+      <p>{{ page.content | raw }}</p>
+
+      <div class="pie_faq">
+        <h2>FAQ</h2>
+        <div id="faq">
+          <div class="faq_box_tab">
+            <div class="faq_box_main">
+              <div class="faq_heading">
+                <i class="fas fa-question-circle"></i><a>faq Heading #1</a>
+                <!-- FAQ HEADING 1 -->
+                <div class="faq_icon">
+                  <div class="faq_bar f"></div>
+                  <div class="faq_bar s"></div>
+                </div>
+              </div>
+              <div class="faq_box">
+                <!-- FAQ ANSWER 1 -->
+                <p>
+                  Description of your faq or just extra details go here. Lorem
+                  ipsum dolor sit amet, consectetur adipiscing elit. Aenean
+                  aliquet facilisis velit, at euismod est volutpat non. Phasellus
+                  eget metus sapien. Etiam fermentum eleifend convallis. Sed
+                  tincidunt dictum nisi, vulputate ultricies massa consequat
+                  vitae. In hac habitasse platea dictumst.
+                </p>
+              </div>
+            </div>
+
+            <div class="faq_box_main">
+              <div class="faq_heading">
+                <i class="fas fa-question-circle"></i><a>faq Heading #2</a>
+                <!-- FAQ HEADING 2 -->
+                <div class="faq_icon">
+                  <div class="faq_bar f"></div>
+                  <div class="faq_bar s"></div>
+                </div>
+              </div>
+              <div class="faq_box">
+                <!-- FAQ ANSWER 2 -->
+                <p>
+                  Description of your faq 2 or just extra details go here. Lorem
+                  ipsum dolor sit amet, consectetur adipiscing elit. Aenean
+                  aliquet facilisis velit, at euismod est volutpat non. Phasellus
+                  eget metus sapien. Etiam fermentum eleifend convallis. Sed
+                  tincidunt dictum nisi, vulputate ultricies massa consequat
+                  vitae. In hac habitasse platea dictumst.
+                </p>
+              </div>
+            </div>
+
+            <div class="faq_box_main">
+              <div class="faq_heading">
+                <i class="fas fa-question-circle"></i><a>faq Heading #3</a>
+                <!-- FAQ HEADING 3 -->
+                <div class="faq_icon">
+                  <div class="faq_bar f"></div>
+                  <div class="faq_bar s"></div>
+                </div>
+              </div>
+              <div class="faq_box">
+                <!-- FAQ ANSWER 3 -->
+                <p>
+                  Description of your faq or just extra details go here. Lorem
+                  ipsum dolor sit amet, consectetur adipiscing elit. Aenean
+                  aliquet facilisis velit, at euismod est volutpat non. Phasellus
+                  eget metus sapien. Etiam fermentum eleifend convallis. Sed
+                  tincidunt dictum nisi, vulputate ultricies massa consequat
+                  vitae. In hac habitasse platea dictumst.
+                </p>
+              </div>
+            </div>
+
+            <div class="faq_box_main">
+              <div class="faq_heading">
+                <i class="fas fa-question-circle"></i><a>faq Heading #4</a>
+                <!-- FAQ HEADING 4 -->
+                <div class="faq_icon">
+                  <div class="faq_bar f"></div>
+                  <div class="faq_bar s"></div>
+                </div>
+              </div>
+              <div class="faq_box">
+                <!-- FAQ ANSWER 4 -->
+                <p>
+                  Description of your faq 2 or just extra details go here. Lorem
+                  ipsum dolor sit amet, consectetur adipiscing elit. Aenean
+                  aliquet facilisis velit, at euismod est volutpat non. Phasellus
+                  eget metus sapien. Etiam fermentum eleifend convallis. Sed
+                  tincidunt dictum nisi, vulputate ultricies massa consequat
+                  vitae. In hac habitasse platea dictumst.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="pie_info">
+        <h2>INFO</h2>
+        <div id="pinfo">
+          <div class="pie_info_btn">
+            <a target="_blank" href="https://www.craftingstore.net/terms">
+              <i class="fas fa-book"></i>
+              <span>CraftingStore Terms Of Service</span>
+            </a>
+          </div>
+
+          <div class="pie_info_btn">
+            <a target="_blank" href="/terms">
+              <i class="fas fa-file"></i>
+              <span>Terms Of Service</span>
+            </a>
+          </div>
+
+          <div class="pie_info_btn discord_info_btn">
+            <a href="" target="_blank">
+              <i class="fab fa-discord"></i>
+              <span>Discord</span>
+            </a>
+          </div>
+
+          <div class="pie_info_btn pie_rtable">
+            <a href="javascript:void(0);">
+              <i class="fas fa-list"></i>
+              <span>Rank Table</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div
+    id="modal-rtable"
+    data-iziModal-title="Rank Table"
+    data-iziModal-subtitle="Our server ranks and its features"
+    data-iziModal-icon="icon-home"
+  >
+    <div id="table_wrapper">
+      <table class="product_features">
+        <thead>
+          <th class="rankInfo">
+            <div class="feature_text">Features</div>
+          </th>
+          <th class="rankBox vip">
+            VIP<small>$4.99</small><a href="#" class="purchase_btn">Purchase</a>
+          </th>
+          <th class="rankBox vipplus">
+            VIP+<small>$9.99</small><a href="#" class="purchase_btn">Purchase</a>
+          </th>
+          <th class="rankBox legend">
+            LEGEND<small>$19.99</small
+            ><a href="#" class="purchase_btn">Purchase</a>
+          </th>
+          <th class="rankBox godly">
+            GODLY<small>$49.99</small
+            ><a href="#" class="purchase_btn">Purchase</a>
+          </th>
+          <th class="rankBox infamous">
+            INFAMOUS<small>$99.99</small
+            ><a href="#" class="purchase_btn">Purchase</a>
+          </th>
+        </thead>
+
+        <tbody>
+          <tr>
+            <th class="feature_name">In-game name color</th>
+            <th class="feature_availability">Red</th>
+            <th class="feature_availability">Blue</th>
+            <th class="feature_availability">Green</th>
+            <th class="feature_availability">Gold</th>
+            <th class="feature_availability">Purple</th>
+          </tr>
+          <tr>
+            <th class="feature_name">Chat Prefix</th>
+            <th class="feature_availability">[VIP]</th>
+            <th class="feature_availability">[VIP+]</th>
+            <th class="feature_availability">[LEGEND]</th>
+            <th class="feature_availability">[GODLY]</th>
+            <th class="feature_availability">[INFAMOUS]</th>
+          </tr>
+          <tr>
+            <th class="feature_name">Feature one</th>
+            <th class="feature_availability">1 Key</th>
+            <th class="feature_availability">3 Keys</th>
+            <th class="feature_availability">6 Keys</th>
+            <th class="feature_availability">10 Keys</th>
+            <th class="feature_availability">50 Keys</th>
+          </tr>
+          <tr>
+            <th class="feature_name">Feature two</th>
+            <th class="feature_availability">2 Homes</th>
+            <th class="feature_availability">7 Homes</th>
+            <th class="feature_availability">10 Homes</th>
+            <th class="feature_availability">15 Homes</th>
+            <th class="feature_availability">30 Homes</th>
+          </tr>
+          <tr>
+            <th class="feature_name">Feature three</th>
+            <th class="feature_availability">VIP Kit</th>
+            <th class="feature_availability">VIP+ Kit</th>
+            <th class="feature_availability">LEGEND Kit</th>
+            <th class="feature_availability">Godly Kit</th>
+            <th class="feature_availability">Infamous Kit</th>
+          </tr>
+          <tr>
+            <th class="feature_name">/example1 Command</th>
+            <th class="feature_availability"><i class="fas fa-check"></i></th>
+            <th class="feature_availability"><i class="fas fa-check"></i></th>
+            <th class="feature_availability"><i class="fas fa-check"></i></th>
+            <th class="feature_availability"><i class="fas fa-check"></i></th>
+            <th class="feature_availability"><i class="fas fa-check"></i></th>
+          </tr>
+          <tr>
+            <th class="feature_name">/example2 Command</th>
+            <th class="feature_availability"><i class="fas fa-check"></i></th>
+            <th class="feature_availability"><i class="fas fa-check"></i></th>
+            <th class="feature_availability"><i class="fas fa-check"></i></th>
+            <th class="feature_availability"><i class="fas fa-check"></i></th>
+            <th class="feature_availability"><i class="fas fa-check"></i></th>
+          </tr>
+          <tr>
+            <th class="feature_name">/example3 Command</th>
+            <th class="feature_availability"><i class="fas fa-times"></i></th>
+            <th class="feature_availability"><i class="fas fa-check"></i></th>
+            <th class="feature_availability"><i class="fas fa-check"></i></th>
+            <th class="feature_availability"><i class="fas fa-check"></i></th>
+            <th class="feature_availability"><i class="fas fa-check"></i></th>
+          </tr>
+
+          <tr>
+            <th class="feature_name">/example4 Command</th>
+            <th class="feature_availability"><i class="fas fa-times"></i></th>
+            <th class="feature_availability"><i class="fas fa-times"></i></th>
+            <th class="feature_availability"><i class="fas fa-check"></i></th>
+            <th class="feature_availability"><i class="fas fa-check"></i></th>
+            <th class="feature_availability"><i class="fas fa-check"></i></th>
+          </tr>
+          <tr>
+            <th class="feature_name">/example5 Command</th>
+            <th class="feature_availability"><i class="fas fa-times"></i></th>
+            <th class="feature_availability"><i class="fas fa-times"></i></th>
+            <th class="feature_availability"><i class="fas fa-check"></i></th>
+            <th class="feature_availability"><i class="fas fa-check"></i></th>
+            <th class="feature_availability"><i class="fas fa-check"></i></th>
+          </tr>
+          <tr>
+            <th class="feature_name">/example6 Command</th>
+            <th class="feature_availability"><i class="fas fa-times"></i></th>
+            <th class="feature_availability"><i class="fas fa-times"></i></th>
+            <th class="feature_availability"><i class="fas fa-times"></i></th>
+            <th class="feature_availability"><i class="fas fa-check"></i></th>
+            <th class="feature_availability"><i class="fas fa-check"></i></th>
+          </tr>
+          <tr>
+            <th class="feature_name">/example7 Command</th>
+            <th class="feature_availability"><i class="fas fa-times"></i></th>
+            <th class="feature_availability"><i class="fas fa-times"></i></th>
+            <th class="feature_availability"><i class="fas fa-times"></i></th>
+            <th class="feature_availability"><i class="fas fa-check"></i></th>
+            <th class="feature_availability"><i class="fas fa-check"></i></th>
+          </tr>
+          <tr>
+            <th class="feature_name">/example8 Command</th>
+            <th class="feature_availability"><i class="fas fa-times"></i></th>
+            <th class="feature_availability"><i class="fas fa-times"></i></th>
+            <th class="feature_availability"><i class="fas fa-times"></i></th>
+            <th class="feature_availability"><i class="fas fa-times"></i></th>
+            <th class="feature_availability"><i class="fas fa-check"></i></th>
+          </tr>
+          <tr>
+            <th class="feature_name">/example9 Command</th>
+            <th class="feature_availability"><i class="fas fa-times"></i></th>
+            <th class="feature_availability"><i class="fas fa-times"></i></th>
+            <th class="feature_availability"><i class="fas fa-times"></i></th>
+            <th class="feature_availability"><i class="fas fa-times"></i></th>
+            <th class="feature_availability"><i class="fas fa-check"></i></th>
+          </tr>
+          <tr>
+            <th class="feature_name">/example10 Command</th>
+            <th class="feature_availability"><i class="fas fa-times"></i></th>
+            <th class="feature_availability"><i class="fas fa-times"></i></th>
+            <th class="feature_availability"><i class="fas fa-times"></i></th>
+            <th class="feature_availability"><i class="fas fa-times"></i></th>
+            <th class="feature_availability"><i class="fas fa-check"></i></th>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+{% endblock %}
